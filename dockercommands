@@ -1,0 +1,13 @@
+# to find docker version
+  docker --version
+
+# To pull an image
+  cmd: sudo docker pull < imageName > 
+  Example: sudo docker pull  jenkins/jenkins:lts
+
+# To run a container
+  Example: docker run -d --name jenkins -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+
+# To Create Docker volume
+  sudo docker volume create < VolumeName >
+  sudo docker volume create jenkins_home
